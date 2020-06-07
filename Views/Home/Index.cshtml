@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-12 text-center" id="top-col">
+        <h5>Random Passcode (passcode #@ViewBag.PasscodeNumber)</h5>
+    </div>
+    <div class="col-6 offset-3 text-center">
+        <h1 id="passcode">@ViewBag.GeneratedPasscode</h1>
+    </div>
+    <div class="col-12 text-center" id="bot-col">
+        <form action="/" method="post">
+            <input type="hidden"/>
+            <div class="form-group">
+                <button class="btn btn-primary">Generate</button>
+            </div>
+        </form>
+    </div>
+</div>
+
